@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+
+////////////////////////////////////////////////////////////////////////////////////////////////// Generales ///////////////////////////////////////////////////////////////////////////////////////
+ 
+    <servlet>
+        <servlet-name>ValSesion</servlet-name>
+        <servlet-class>Servlets.ValSesion</servlet-class>
+    </servlet>
+
+
+    <servlet>
+        <servlet-name>APeriodoED</servlet-name>
+        <servlet-class>Servlets_E.APeriodoED</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ValSesion</servlet-name>
+        <url-pattern>/ValSesion</url-pattern>
+    </servlet-mapping>
+    
+////////////////////////////////////////////////////////////////////////////////
+   
+    <servlet>
+        <servlet-name>CerSesion</servlet-name>
+        <servlet-class>Servlets.CerSesion</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>CerSesion</servlet-name>
+        <url-pattern>/CerSesion</url-pattern>
+    </servlet-mapping> 
+    
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////// Usuario Alumno ///////////////////////////////////////////////////////////////////      
+
+    <servlet>
+        <servlet-name>InicioED</servlet-name>
+        <servlet-class>Servlets.InicioED</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>InicioED</servlet-name>
+        <url-pattern>/InicioED</url-pattern>
+    </servlet-mapping>
+    
+////////////////////////////////////////////////////////////////////////////////
+
+    <servlet>
+        <servlet-name>MuestraImagen</servlet-name>
+        <servlet-class>Servlets.MuestraImagen</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>MuestraImagen</servlet-name>
+        <url-pattern>/MuestraImagen</url-pattern>
+    </servlet-mapping>
+    
+////////////////////////////////////////////////////////////////////////////////
+
+    <servlet>
+        <servlet-name>Encuesta</servlet-name>
+        <servlet-class>Servlets.Encuesta</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Encuesta</servlet-name>
+        <url-pattern>/Encuesta</url-pattern>
+    </servlet-mapping>
+
+////////////////////////////////////////////////////////////////////////////////
+
+    <servlet>
+        <servlet-name>GEncuesta</servlet-name>
+        <servlet-class>Servlets.GEncuesta</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>GEncuesta</servlet-name>
+        <url-pattern>/GEncuesta</url-pattern>
+    </servlet-mapping>
+    
+//////////////////////////////////////////////////////////////////////////////MAPPING ESTADISTICAS/////////////////////////////////////////////////////////////////////////
+
+    
+    <servlet>
+        <servlet-name>ReporteEva</servlet-name>
+        <servlet-class>Servlets_E.ReporteEva</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReporteEva</servlet-name>
+        <url-pattern>/ReporteEva</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>MProfesores</servlet-name>
+        <servlet-class>Servlets_E.MProfesores</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MProfesores</servlet-name>
+        <url-pattern>/MProfesores</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Grafica</servlet-name>
+        <servlet-class>Servlets_E.Grafica</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Grafica</servlet-name>
+        <url-pattern>/Grafica</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>GraficasPDF</servlet-name>
+        <servlet-class>Servlets_E.GraficasPDF</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GraficasPDF</servlet-name>
+        <url-pattern>/GraficasPDF</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>MMateria</servlet-name>
+        <servlet-class>Servlets_E.MMateria</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MMateria</servlet-name>
+        <url-pattern>/MMateria</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>MMateriaD</servlet-name>
+        <url-pattern>/MMateriaD</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>MMateriaD</servlet-name>
+        <servlet-class>Servlets_E.MMateriaD</servlet-class>
+    </servlet>
+    
+    
+    <servlet>
+        <servlet-name>LEvaluados</servlet-name>
+        <servlet-class>Servlets_E.LEvaluados</servlet-class>
+    </servlet>    
+    <servlet-mapping>
+        <servlet-name>LEvaluados</servlet-name>
+        <url-pattern>/LEvaluados</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>GExcel</servlet-name>
+        <servlet-class>Servlets_E.GExcel</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GExcel</servlet-name>
+        <url-pattern>/GExcel</url-pattern>
+    </servlet-mapping>    
+    
+    <servlet-mapping>
+        <servlet-name>GraficaC</servlet-name>
+        <url-pattern>/GraficaC</url-pattern>
+    </servlet-mapping>
+        
+    <servlet>
+        <servlet-name>GraficaC</servlet-name>
+        <servlet-class>Servlets_E.GraficaC</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Persona</servlet-name>
+        <url-pattern>/Persona</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Persona</servlet-name>
+        <servlet-class>Servlets_E.Persona</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>APersona</servlet-name>
+        <url-pattern>/APersona</url-pattern>
+    </servlet-mapping>
+       
+    <servlet>
+        <servlet-name>APersona</servlet-name>
+        <servlet-class>Servlets_E.APersona</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>PeriodoED</servlet-name>
+        <url-pattern>/PeriodoED</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>PeriodoED</servlet-name>
+        <servlet-class>Servlets_E.PeriodoED</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>APeriodoED</servlet-name>
+        <url-pattern>/APeriodoED</url-pattern>
+    </servlet-mapping>
+    </web-app>
